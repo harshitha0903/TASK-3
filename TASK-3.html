@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Platform</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #d71939;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz {
+            margin-bottom: 20px;
+        }
+
+        .quiz h2 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .quiz p {
+            margin: 10px 0;
+        }
+
+        .quiz button {
+            background-color: #d71939;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .quiz button:hover {
+            background-color: #d71939;
+        }
+
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #d71939;
+            background-color: #f9fff9;
+            border-radius: 5px;
+            color: #d71939;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Quiz Platform</h1>
+    </header>
+    <div class="container">
+        <div class="quiz">
+            <h2>Question 1: What is the capital of France?</h2>
+            <p><input type="radio" name="q1" value="Berlin"> Berlin</p>
+            <p><input type="radio" name="q1" value="Madrid"> Madrid</p>
+            <p><input type="radio" name="q1" value="Paris"> Paris</p>
+            <p><input type="radio" name="q1" value="Rome"> Rome</p>
+        </div>
+        <div class="quiz">
+            <h2>Question 2: Which programming language is used for web development?</h2>
+            <p><input type="radio" name="q2" value="Python"> Python</p>
+            <p><input type="radio" name="q2" value="Java"> Java</p>
+            <p><input type="radio" name="q2" value="JavaScript"> JavaScript</p>
+            <p><input type="radio" name="q2" value="C++"> C++</p>
+        </div>
+        <div class="quiz">
+            <h2>Question 3: What does CSS stand for?</h2>
+            <p><input type="radio" name="q3" value="Creative Style Sheets"> Creative style sheets</p>
+            <p><input type="radio" name="q3" value="Cascading Style Sheets"> Cascading Style Sheets</p>
+            <p><input type="radio" name="q3" value="Colorful Style Sheets"> Colorful Style Sheets</p>
+            <p><input type="radio" name="q3" value="Computer Style Sheets"> Computer Style sheets</p>
+        </div>
+        <div class="quiz">
+            <h2>Question 4: what is the largest planet in our solar system?</h2>
+            <p><input type="radio" name="q4" value="Earth"> Earth</p>
+            <p><input type="radio" name="q4" value="Mar's"> Mars</p>
+            <p><input type="radio" name="q4" value="Jupiter"> Jupiter</p>
+            <p><input type="radio" name="q4" value="Saturn"> Saturn</p>
+        </div>
+        <div class="quiz">
+            <h2>Question 5: Who wrote "Romeo and Juliet"?</h2>
+            <p><input type="radio" name="q5" value="Charles Dickens"> Charles Dickens</p>
+            <p><input type="radio" name="q5" value="William Shakespeare"> William Shakespeare</p>
+            <p><input type="radio" name="q5" value="Mark Twain"> Mark Twain</p>
+            <p><input type="radio" name="q5" value="Jane Austen"> Jane Austen</p>
+        </div>
+        <div class="quiz">
+            <h2>Question 6: What is the boiling point of water?</h2>
+            <p><input type="radio" name="q6" value="50°C"> 50°C</p>
+            <p><input type="radio" name="q6" value="75°C"> 75°C</p>
+            <p><input type="radio" name="q6" value="100°C"> 100°C</p>
+            <p><input type="radio" name="q6" value="125°C"> 125°C</p>
+        </div>
+        <div class="quiz">
+            <h2>Question : what is the smallest unit of life?</h2>
+            <p><input type="radio" name="q7" value="tissue"> Tissue</p>
+            <p><input type="radio" name="q7" value="cell"> Cell</p>
+            <p><input type="radio" name="q7" value="Organ"> Organ</p>
+            <p><input type="radio" name="q7" value="organism"> Organism</p>
+        </div>
+        <div class="quiz">
+            <h2>Question : who discovered gravity?</h2>
+            <p><input type="radio" name="q8" value="Albert Einstein"> Albert Einstein</p>
+            <p><input type="radio" name="q8" value="Isaac Newton"> Isaac Newton</p>
+            <p><input type="radio" name="q8" value="Galileo Galilei"> Galileo Galilei</p>
+            <p><input type="radio" name="q8" value="Nikola Tesla"> Nikola Tesla</p>
+        </div>
+        <div class="quiz">
+            <h2>Question 9: What is the chemical symbol for water?</h2>
+            <p><input type="radio" name="q9" value="H2O"> 120</p>
+            <p><input type="radio" name="q9" value="H2O"> H2O</p>
+            <p><input type="radio" name="q9" value="CO2"> CO2</p>
+            <p><input type="radio" name="q9" value="NaCl"> NaCl</p>
+        </div>
+        <div class="quiz">
+            <h2>Question 10: which continent is known as the "Dark Continent"?/h2>
+            <h2>Question 10: Which continent is known as the "Dark Continent"?</h2>
+            <p><input type="radio" name="q10" value="Asia"> Asia</p>
+                <p><input type="radio" name="q10" value="South America"> South America</p>
+                <p><input type="radio" name="q10" value="Australia"> Australia</p>
+        </div>
+        <button onclick="submitQuiz()">Submit</button>
+        <div id="result" class="result" style="display: none;"></div>
+    </div>
+    <script>
+
+        function submitQuiz() {
+            let score = 0;
+            const answers = {
+                q1: 'Paris',
+                q2: 'JavaScript',
+                q3: 'Cascading Style Sheets',
+                q4: 'Jupiter',
+                q5: 'William Shakespeare',
+                q6: '100°C',
+                q7: 'Cell',
+                q8: 'Isaac Newton',
+                q9: 'H2O',
+                q10: 'Africa'
+            };
+            for (const [key, value] of Object.entries(answers)) {
+                const selected = document.querySelector(`input[name="${key}"]:checked`);
+                if (selected && selected.value === value) {
+                    score++;
+                }
+            }
+            const result = document.getElementById('result');
+            result.style.display = 'block';
+            result.textContent = `You scored ${score} out of ${Object.keys(answers).length}.`;
+
+        }
+    </script>
+</body>
+</html>
